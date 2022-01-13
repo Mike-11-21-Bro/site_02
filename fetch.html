@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+<p id="demo">Fetch a file to change this text.</p>
+
+<script>
+
+let file = "https://www.w3schools.com/js/fetch_info.txt"
+
+fetch (file)
+
+.then(x => x.text())
+
+.then(y => document.getElementById("demo").innerHTML = y);
+
+</script>
+</body>
+
+</html>
